@@ -1,0 +1,43 @@
+POST https://127.0.0.1:8000/products/123/lowest-price
+Accept: application/json
+Content-Type: application/json
+
+{
+  "quantity": 5,
+  "request_location": "UK",
+  "voucher_code": "OU812",
+  "request_date": "2022-04-04",
+  "product_id": 1
+}
+
+<> 2025-02-08T223402.200.html
+<> 2025-02-08T222815.200.html
+<> 2025-02-08T222753.500.json
+<> 2025-02-08T222728.500.json
+<> 2025-02-08T222659.500.json
+<> 2025-02-08T221829.200.json
+<> 2025-02-08T221704.200.json
+<> 2025-02-08T221424.200.html
+<> 2025-02-08T221408.500.html
+<> 2025-02-08T221151.500.html
+<> 2025-02-08T215742.200.json
+
+###
+
+POST https://127.0.0.1:8000/products/123/lowest-price
+Accept: application/json
+Content-Type: application/json
+force_fail: 400
+
+{
+  "quantity": 5,
+  "request_location": "UK",
+  "voucher_code": "OU812",
+  "request_date": "2022-04-04",
+  "product_id": 1
+}
+
+<> 2025-02-08T215749.400.json
+<> 2025-02-08T193356.400.json
+
+###
